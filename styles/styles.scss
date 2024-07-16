@@ -16,9 +16,13 @@ $font-link: "Open Sans", sans-serif;
   }
   
   body{
+    font-family: $font-link;
+    margin:0;
+    padding:0;
+  }
+  nav {
     width: 100%;
     background-color: #fff;
-    margin:0;
   }
 
   
@@ -34,6 +38,11 @@ $font-link: "Open Sans", sans-serif;
     width: 93px;
     height: 56px;
   }
+  .menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
 
   .social{
       display: flex;
@@ -42,7 +51,6 @@ $font-link: "Open Sans", sans-serif;
   }
 
   .social a{
-    font-family: $font-link;
     text-decoration: none;
     color: $color-dark;
     transition: background-color 0.5s ease;
@@ -90,7 +98,6 @@ $font-link: "Open Sans", sans-serif;
     gap:40px;
     align-items: center;
     font-size: 16px;
-    font-family: $font-link;
   }
 
   .nav ul{
@@ -98,6 +105,7 @@ $font-link: "Open Sans", sans-serif;
     list-style: none;
     gap: 20px;
     margin:0;
+    padding:0;
   }
 
   .nav ul li a {
@@ -143,5 +151,36 @@ $font-link: "Open Sans", sans-serif;
     &:hover {
         background-color: $color-button-hover;
         color: #fff;
+    }
+}
+
+//mobile systems
+
+@media (max-width: 768px) {
+    .top {
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo img{
+        width: 40px;
+        height: auto;
+    }
+    .social{
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+
+    }
+    .bot {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        display: none;
+    }
+    .cta{
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
     }
 }
