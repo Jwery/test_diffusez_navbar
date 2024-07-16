@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #DBEBFD;
+}
+
+.logo img {
+  width: 93px;
+  height: 56px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #003978;
+  transition: background-color 0.5s ease;
+  padding: 5px;
+  border-radius: 16px;
+}
+.social ahover {
+  background-color: #003978;
+  color: #DBEBFD;
+}
+
+.social > ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.social > ul > li {
+  color: #003978;
+}
+
+.vertical {
+  color: #003978;
+}
+
+.bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #003978;
+  font-weight: 600;
+  transition: background-color 0.5s ease;
+  padding: 5px 10px;
+  border-radius: 16px;
+}
+.nav ul li a:hover {
+  background-color: #DBEBFD;
+}
+
+.cta {
+  display: flex;
+  gap: 10px;
+}
+
+.button_devis, .button_estim {
+  padding: 10px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #003366; /* Border color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button_devis {
+  background-color: #fff;
+  color: #003366;
+}
+.button_devis:hover {
+  background-color: #003366;
+  color: #fff;
+}
+
+.button_estim {
+  background-color: #003366;
+  color: #fff;
+}
+.button_estim:hover {
+  background-color: #001f4d;
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */

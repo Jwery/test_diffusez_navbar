@@ -1,0 +1,147 @@
+//parameters>color
+
+$color-dark: #003978;
+$color-light: #DBEBFD;
+$color-button-border: #003366;
+$color-button-hover:#001f4d;
+
+//parameters>font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+$font-link: "Open Sans", sans-serif;
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100%;
+    background-color: #fff;
+    margin:0;
+  }
+
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $color-light;
+  }
+  
+  .logo img{
+    width: 93px;
+    height: 56px;
+  }
+
+  .social{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .social a{
+    font-family: $font-link;
+    text-decoration: none;
+    color: $color-dark;
+    transition: background-color 0.5s ease;
+    padding: 5px;
+    border-radius: 16px;
+    &hover {
+        background-color: $color-dark;
+        color:$color-light
+    }
+  }
+  
+  .social > ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social > ul > li {
+   color:$color-dark;
+  }
+  
+  .vertical{
+    color:$color-dark;
+  }
+
+
+
+
+
+
+
+
+  .bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .nav{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    font-size: 16px;
+    font-family: $font-link;
+  }
+
+  .nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin:0;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    color: $color-dark;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+    padding: 5px 10px;
+    border-radius: 16px;
+    &:hover {
+        background-color: $color-light;
+    }
+}
+
+.cta {
+    display: flex;
+    gap: 10px;
+}
+
+.button_devis, .button_estim {
+    padding: 10px 20px;
+    font-family: $font-link;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid $color-button-border; /* Border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button_devis {
+    background-color: #fff;
+    color: $color-button-border;
+    &:hover {
+        background-color: $color-button-border;
+        color: #fff;
+    }
+}
+
+.button_estim {
+    background-color: $color-button-border;
+    color: #fff;
+    &:hover {
+        background-color: $color-button-hover;
+        color: #fff;
+    }
+}
